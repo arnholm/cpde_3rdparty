@@ -7,6 +7,6 @@ pushd ..\msvcbuild
 git clone https://github.com/arnholm/carve carve
 pushd carve
 call build_windows_msvc.cmd
-popd
-popd
+REM return to the directory of this batch file
+cd %~dp0
 echo ==== carve build completed =====

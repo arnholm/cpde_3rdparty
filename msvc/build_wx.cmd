@@ -22,7 +22,6 @@ REM -------
 nmake -f makefile.vc TARGET_CPU=amd64 BUILD=release DEBUG_INFO=1 RUNTIME_LIBS=dynamic SHARED=0 
 nmake -f makefile.vc TARGET_CPU=amd64 BUILD=debug   DEBUG_INFO=1 RUNTIME_LIBS=dynamic SHARED=0  
 REM
-popd
-popd
-popd
+REM return to the directory of this batch file
+cd %~dp0
 echo ==== wxWidgets build completed =====

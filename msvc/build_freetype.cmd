@@ -17,5 +17,6 @@ pushd build
 msbuild freetype.sln -target:freetype /p:Platform="x64" /p:Configuration=Release /m
 msbuild freetype.sln -target:freetype /p:Platform="x64" /p:Configuration=Debug /m
 dir .\Debug,.\Release
-popd
+REM return to the directory of this batch file
+cd %~dp0
 echo FreeType build script ended

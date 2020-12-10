@@ -47,7 +47,7 @@ include | .\libs\msgpack-c\include
 
     build_boost.cmd
 
-This script clones from github and compiles it into static libraries. This build is quite length and requiring several GB
+This script clones from github and compiles boost into static libraries. This build is quite lengthy and requiring several GB of disk space
 
 Path | Value
  --- | ---  
@@ -57,12 +57,35 @@ lib     | .\libs\boost\stage\lib
 ### carve
 
     build_carve.cmd
-    
+
+This script clones from github and compiles carve into static libraries.
+
+Path | Value | Note
+ --- | ---  | ---
+include | .\libs\carve |  .
+lib     | .\libs\carve\build\lib\Release | Release build
+lib     | .\libs\carve\build\lib\Debug | Debug build
+
+
 ### freeglut
 
     build_freeglut.cmd
+
+This script clones from github and compiles freeglut into static and dynamic libraries. 
+
+Path | Value
+ --- | ---  
+include | .\libs\freeglut
+lib     | .\libs\freeglut\build\lib
 
 ### freetype
 
     build_freetype.cmd
 
+This script clones from github and compiles freetype into a static library
+
+Path | Value | Note
+ --- | ---  | ---
+include | .\libs\freetype |  .
+lib     | .\libs\freetype\build\lib\Release | Release build
+lib     | .\libs\freetype\build\lib\Debug | Debug build

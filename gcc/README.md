@@ -24,24 +24,64 @@ Open a terminal in the msvc folder and run each script. Each script adds its bui
                       
 ### wx (wxWidgets)
 
-    $ build_wx.sh
+    $ ./build_wx.sh
+	 
+This script fetches wxWidgets from github and compiles it to static libraries and installs it to /usr/local 
+Note that this script will ask for sudo password twice in order to install.
+
+Path | Value | Note
+ --- | ---   | ---
+include | /usr/local/include   |  .
+lib     | .            |  Special link procedure using wx-config
 
 ### msgpack
 
-    $ build_msgpack.sh
+    $ ./build_msgpack.sh
+
+This script clones from github. No building is done as it is used as header only.
+
+Path | Value 
+ --- | ---   
+include | ./libs/msgpack-c/include 
+
 
 ### boost
 
-    $ build_boost.sh
+    $ ./build_boost.sh
+	 
+This script either installs from the linux distribution package manager (sudo apt-get install libbost-dev) or it fetches from gihub and builds from source. See the script for the current state, it is defined by a flag in the script. Sometimes static builds are unable to link with boost::filesystem properly, and that is the reason static builds are not always used.
 
 ### carve
 
-    $ build_carve.sh
+    $ ./build_carve.sh
+	 
+This script clones from github and compiles carve into a static library: libcarve.lib
+
+Path | Value | Note
+ --- | ---  | ---
+include | ./libs/carve/include |  .
+include | ./libs/carve/build/include | .
+lib     | ./libs/carve/build/lib | libcarve.a
     
 ### freeglut
 
-    $ build_freeglut.sh
+    $ ./build_freeglut.sh
+
+This script clones from github and compiles freeglut into a static and dynamic libraries: libglut.a / libglut.so
+
+Path | Value | Note
+ --- | ---  | ---
+include | ./libs/freeGLUT/freeglut/freeglut/include | .
+lib     | ./libs/freeGLUT/build/lib | libglut.a
+bin     | ./libs/freeGLUT/build/lib | libglut.so
 
 ### freetype
 
-    $ build_freetype.sh
+    $ ./build_freetype.sh
+
+This script clones from github and compiles freetype into a static library: libfreetype.a
+
+Path | Value | Note
+ --- | ---  | ---
+include | ./libs/freetype2/include |  .
+lib     | ./libs/freetype2/build | libfreetype.a

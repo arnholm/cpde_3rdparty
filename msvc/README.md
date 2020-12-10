@@ -51,7 +51,7 @@ This script clones from github and compiles boost into static libraries. This bu
 
 Path | Value
  --- | ---  
-include | .\libs\boost
+include | .\libs\boost\include
 lib     | .\libs\boost\stage\lib
 
 ### carve
@@ -62,7 +62,7 @@ This script clones from github and compiles carve into a static library: carve.l
 
 Path | Value | Note
  --- | ---  | ---
-include | .\libs\carve |  .
+include | .\libs\carve\include |  .
 lib     | .\libs\carve\build\lib\Release | Release build
 lib     | .\libs\carve\build\lib\Debug | Debug build
 
@@ -75,7 +75,7 @@ This script clones from github and compiles freeglut into a static and dynamic l
 
 Path | Value | Note
  --- | ---  | ---
-include | .\libs\freeGLUT\freeglut\freeglut | .
+include | .\libs\freeGLUT\freeglut\freeglut\include | .
 lib     | .\libs\freeGLUT\build\lib\Release | freeglut.lib
 bin     | .\libs\freeGLUT\build\lib\Release | freeglut.dll
 lib     | .\libs\freeGLUT\build\lib\Debug   | freeglutd.lib
@@ -89,6 +89,6 @@ This script clones from github and compiles freetype into a static library
 
 Path | Value | Note
  --- | ---  | ---
-include | .\libs\freetype2 |  .
+include | .\libs\freetype2\include |  .
 lib     | .\libs\freetype2\build\Release | freetype.lib
 lib     | .\libs\freetype2\build\Debug | freetyped.lib

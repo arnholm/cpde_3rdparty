@@ -15,11 +15,11 @@ cmake -B ..\..\build ^
     -DFREEGLUT_BUILD_DEMOS:BOOL="0" ^
     -DFREEGLUT_PRINT_WARNINGS:BOOL="0" ^
     -DINSTALL_PDB:BOOL="0" ^
-    -DFREEGLUT_BUILD_SHARED_LIBS:BOOL="0" ^
+    -DFREEGLUT_BUILD_SHARED_LIBS:BOOL="1" ^
     -DFREEGLUT_PRINT_ERRORS:BOOL="0" 
 pushd ..\..\build
-msbuild freeglut.sln -target:freeglut_static /p:Platform="x64" /p:Configuration=Release /m
-msbuild freeglut.sln -target:freeglut_static /p:Platform="x64" /p:Configuration=Debug /m
+msbuild freeglut.sln -target:freeglut /p:Platform="x64" /p:Configuration=Release /m
+msbuild freeglut.sln -target:freeglut /p:Platform="x64" /p:Configuration=Debug /m
 dir .\lib\Debug,.\lib\Release
 REM return to the directory of this batch file
 cd %~dp0

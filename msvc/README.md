@@ -14,7 +14,7 @@ Designate a build area on the computer, with at least 10GB free space (20GB reco
 
     $ git clone https://github.com/arnholm/cpde_3rdparty
     
-Open a "Developer Command Prompt for VS 2019" (or equivalent) in the msvc folder and run each script. It is also possible to run build_all.cmd to build them all in one go, but running each script separately gives better opportunity to verify the results. Each script adds its build files to the libs folder:
+Open a **"Developer Command Prompt for VS 2019"** (or equivalent) in the msvc folder and run each script. It is also possible to run build_all.cmd to build them all in one go, but running each script separately gives better opportunity to verify the results. Each script adds its build files to the libs folder:
 
     cpde_3rdparty/libs/boost
                       /wx
@@ -47,7 +47,7 @@ include | .\libs\msgpack-c\include
 
     build_boost.cmd
 
-This script clones from github and compiles boost into static libraries. This build is quite lengthy and requiring several GB of disk space
+This script clones from github and compiles boost into static libraries. This build is quite lengthy and requiring several GB of disk space. Under Windows automatic linking via #pragma is used, so the libraries do not need to be explicitly linked, but the library path must be specified.
 
 Path | Value
  --- | ---  
@@ -58,7 +58,7 @@ lib     | .\libs\boost\stage\lib
 
     build_carve.cmd
 
-This script clones from github and compiles carve into static libraries.
+This script clones from github and compiles carve into a static library: carve.lib
 
 Path | Value | Note
  --- | ---  | ---
@@ -71,12 +71,15 @@ lib     | .\libs\carve\build\lib\Debug | Debug build
 
     build_freeglut.cmd
 
-This script clones from github and compiles freeglut into static and dynamic libraries. 
+This script clones from github and compiles freeglut into a static and dynamic libraries: freeglut.lib / freglut.dll
 
-Path | Value
- --- | ---  
-include | .\libs\freeglut
-lib     | .\libs\freeglut\build\lib
+Path | Value | Note
+ --- | ---  | ---
+include | .\libs\freeGLUT\freeglut\freeglut | .
+lib     | .\libs\freeGLUT\build\lib\Release | freeglut.lib
+bin     | .\libs\freeGLUT\build\lib\Release | freeglut.dll
+lib     | .\libs\freeGLUT\build\lib\Debug   | freeglutd.lib
+bin     | .\libs\freeGLUT\build\lib\Debug   | freeglutd.dll
 
 ### freetype
 
@@ -86,6 +89,6 @@ This script clones from github and compiles freetype into a static library
 
 Path | Value | Note
  --- | ---  | ---
-include | .\libs\freetype |  .
-lib     | .\libs\freetype\build\lib\Release | Release build
-lib     | .\libs\freetype\build\lib\Debug | Debug build
+include | .\libs\freetype2 |  .
+lib     | .\libs\freetype2\build\Release | freetype.lib
+lib     | .\libs\freetype2\build\Debug | freetyped.lib

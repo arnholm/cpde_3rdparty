@@ -1,6 +1,6 @@
-# cpde_3rdparty/gcc
+# cpde_3rdparty / gcc
 
-Here are build scripts for 3rd party libraries under Linux/gcc
+These are the CPDE build scripts for 3rd party libraries under  Linux/gcc
 
 ## Prerequisites
 

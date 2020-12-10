@@ -2,8 +2,8 @@
 REM  This procedure builds static carve library for Windows/MSVC
 REM  Procedure must be run from "Visual Studio Command Prompt"
 REM
-mkdir ..\msvcbuild
-pushd ..\msvcbuild
+mkdir ..\libs
+pushd ..\libs
 git clone https://github.com/msgpack/msgpack-c.git 
 pushd msgpack-c
 git checkout tags/cpp-3.3.0

@@ -1,8 +1,8 @@
 #!/bin/bash
 #  This procedure builds static freeGLUT library for linux
 #
-mkdir ../gccbuild
-pushd ../gccbuild
+mkdir ../libs
+pushd ../libs
 git clone https://github.com/dcnieho/freeGLUT
 git checkout tags/FG_3_2_1
 pushd freeGLUT

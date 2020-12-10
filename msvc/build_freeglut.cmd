@@ -2,8 +2,8 @@
 REM  This procedure builds static freeGLUT library for Windows/MSVC
 REM  Procedure must be run from "Visual Studio Command Prompt"
 REM
-mkdir ..\msvcbuild
-pushd ..\msvcbuild
+mkdir ..\libs
+pushd ..\libs
 git clone https://github.com/dcnieho/freeGLUT
 git checkout tags/FG_3_2_1
 pushd freeGLUT

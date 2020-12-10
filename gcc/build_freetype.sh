@@ -1,8 +1,8 @@
 #!/bin/bash
 #  This procedure builds static freetype library for linux
 #
-mkdir ../gccbuild
-pushd ../gccbuild
+mkdir ../libs
+pushd ../libs
 git clone https://github.com/freetype/freetype2 
 pushd freetype2
 git checkout tags/VER-2-10-2

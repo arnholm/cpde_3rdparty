@@ -6,6 +6,16 @@
 SCRIPTPATH=$(dirname $(realpath -s $0))
 mkdir ../gcclibs
 pushd ../gcclibs
+#
+# Install essential build tools and libraries
+#
+sudo apt install cmake
+sudo apt install build-essential
+sudo apt install libgtk2.0-dev
+sudo apt install mesa-common-dev
+sudo apt install freeglut3-dev
+sudo apt install upx-ucl
+#
 git clone https://github.com/wxWidgets/wxWidgets wx
 pushd wx
 git checkout tags/v3.0.4

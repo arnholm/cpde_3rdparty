@@ -25,9 +25,10 @@ Open a terminal in the msvc folder and run each script. Each script adds its bui
 ### wx (wxWidgets)
 
     $ ./build_wx.sh
-	 
-This script fetches wxWidgets from github and compiles it to static libraries and installs it to /usr/local 
-Note that this script will ask for sudo password twice in order to install.
+
+*Always* start with this, because it also installs essential build tools.
+    
+This script fetches wxWidgets from github and compiles it to static libraries and installs it to /usr/local. Note that this script will ask for sudo password several times in order to install.
 
 Path | Value | Note
  --- | ---   | ---

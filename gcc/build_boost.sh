@@ -7,8 +7,13 @@
 BOOST_USE_APT=true
 if [ "$BOOST_USE_APT" = true ] ; then
 #  use dynamic libraries from package manager
-   sudo apt install libboost-dev
-	sudo ldconfig
+   sudo apt -y install libboost-dev
+   sudo apt -y install libboost-system-dev
+   sudo apt -y install libboost-filesystem-dev
+   sudo apt -y install libboost-regex-dev
+   sudo apt -y install libboost-thread-dev
+   sudo apt -y install libboost-program-options-dev
+   sudo ldconfig
 else
 # build static boost libraries from source
    mkdir ../gcclibs

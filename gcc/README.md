@@ -6,8 +6,8 @@ These are the CPDE build scripts for 3rd party libraries under  Linux/gcc
 
 git and cmake must be installed
 
-    sudo apt-get install git
-    sudo apt-get install cmake
+    sudo apt-get -y install git git-gui
+    sudo apt-get -y install cmake
 
 ## Building the components
 

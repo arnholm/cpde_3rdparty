@@ -15,12 +15,12 @@ Designate a build area on the computer, with at least 10GB free space (20GB reco
 
     $ git clone https://github.com/arnholm/cpde_3rdparty
     
-Open a terminal in the msvc folder and run each script. Each script adds its build files to the libs folder:
+Open a terminal in the msvc folder and run each script. Each script adds its build files to the gcclibs folder:
 
-    cpde_3rdparty/libs/boost
-                      /wx
-                      /carve
-                      /..
+    cpde_3rdparty/gcclibs/boost
+                         /wx
+                         /carve
+                         /..
                       
 ### wx (wxWidgets)
 
@@ -42,7 +42,7 @@ This script clones from github. No building is done as it is used as header only
 
 Path | Value 
  --- | ---   
-include | ./libs/msgpack-c/include 
+include | ./gcclibs/msgpack-c/include 
 
 
 ### boost
@@ -59,9 +59,9 @@ This script clones from github and compiles carve into a static library: libcarv
 
 Path | Value | Note
  --- | ---  | ---
-include | ./libs/carve/include |  .
-include | ./libs/carve/build/include | .
-lib     | ./libs/carve/build/lib | libcarve.a
+include | ./gcclibs/carve/include |  .
+include | ./gcclibs/carve/build/include | .
+lib     | ./gcclibs/carve/build/lib | libcarve.a
     
 ### freeglut
 
@@ -71,9 +71,9 @@ This script clones from github and compiles freeglut into a static and dynamic l
 
 Path | Value | Note
  --- | ---  | ---
-include | ./libs/freeGLUT/freeglut/freeglut/include | .
-lib     | ./libs/freeGLUT/build/lib | libglut.a
-bin     | ./libs/freeGLUT/build/lib | libglut.so
+include | ./gcclibs/freeGLUT/freeglut/freeglut/include | .
+lib     | ./gcclibs/freeGLUT/build/lib | libglut.a
+bin     | ./gcclibs/freeGLUT/build/lib | libglut.so
 
 ### freetype
 
@@ -83,5 +83,5 @@ This script clones from github and compiles freetype into a static library: libf
 
 Path | Value | Note
  --- | ---  | ---
-include | ./libs/freetype2/include |  .
-lib     | ./libs/freetype2/build | libfreetype.a
+include | ./gcclibs/freetype2/include |  .
+lib     | ./gcclibs/freetype2/build | libfreetype.a

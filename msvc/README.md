@@ -14,12 +14,12 @@ Designate a build area on the computer, with at least 10GB free space (20GB reco
 
     $ git clone https://github.com/arnholm/cpde_3rdparty
     
-Open a **"Developer Command Prompt for VS 2019"** (or equivalent) in the msvc folder and run each script. It is also possible to run build_all.cmd to build them all in one go, but running each script separately gives better opportunity to verify the results. Each script adds its build files to the libs folder:
+Open a **"Developer Command Prompt for VS 2019"** (or equivalent) in the msvc folder and run each script. It is also possible to run build_all.cmd to build them all in one go, but running each script separately gives better opportunity to verify the results. Each script adds its build files to the msvclibs folder:
 
-    cpde_3rdparty/libs/boost
-                      /wx
-                      /carve
-                      /..
+    cpde_3rdparty/msvclibs/boost
+                          /wx
+                          /carve
+                          /..
                       
 ### wx (wxWidgets)
 
@@ -29,8 +29,8 @@ This script fetches wxWidgets from github and compiles it to static libraries.
 
 Path | Value | Note
  --- | ---   | ---
-include | .\libs\wx\include        |  .
-lib     | .\libs\wx\lib\vc_x64_lib |  Special link procedure using wx-config
+include | .\msvclibs\wx\include        |  .
+lib     | .\msvclibs\wx\lib\vc_x64_lib |  Special link procedure using wx-config
 
 ### msgpack
 
@@ -40,7 +40,7 @@ This script clones from github. No building is done as it is used as header only
 
 Path | Value 
  --- | ---   
-include | .\libs\msgpack-c\include 
+include | .\msvclibs\msgpack-c\include 
 
 
 ### boost
@@ -51,8 +51,8 @@ This script clones from github and compiles boost into static libraries. This bu
 
 Path | Value
  --- | ---  
-include | .\libs\boost\include
-lib     | .\libs\boost\stage\lib
+include | .\msvclibs\boost\include
+lib     | .\msvclibs\boost\stage\lib
 
 ### carve
 
@@ -62,9 +62,9 @@ This script clones from github and compiles carve into a static library: carve.l
 
 Path | Value | Note
  --- | ---  | ---
-include | .\libs\carve\include |  .
-lib     | .\libs\carve\build\lib\Release | Release build
-lib     | .\libs\carve\build\lib\Debug | Debug build
+include | .\msvclibs\carve\include |  .
+lib     | .\msvclibs\carve\build\lib\Release | Release build
+lib     | .\msvclibs\carve\build\lib\Debug | Debug build
 
 
 ### freeglut
@@ -75,11 +75,11 @@ This script clones from github and compiles freeglut into a static and dynamic l
 
 Path | Value | Note
  --- | ---  | ---
-include | .\libs\freeGLUT\freeglut\freeglut\include | .
-lib     | .\libs\freeGLUT\build\lib\Release | freeglut.lib
-bin     | .\libs\freeGLUT\build\lib\Release | freeglut.dll
-lib     | .\libs\freeGLUT\build\lib\Debug   | freeglutd.lib
-bin     | .\libs\freeGLUT\build\lib\Debug   | freeglutd.dll
+include | .\msvclibs\freeGLUT\freeglut\freeglut\include | .
+lib     | .\msvclibs\freeGLUT\build\lib\Release | freeglut.lib
+bin     | .\msvclibs\freeGLUT\build\lib\Release | freeglut.dll
+lib     | .\msvclibs\freeGLUT\build\lib\Debug   | freeglutd.lib
+bin     | .\msvclibs\freeGLUT\build\lib\Debug   | freeglutd.dll
 
 ### freetype
 
@@ -89,6 +89,6 @@ This script clones from github and compiles freetype into a static library
 
 Path | Value | Note
  --- | ---  | ---
-include | .\libs\freetype2\include |  .
-lib     | .\libs\freetype2\build\Release | freetype.lib
-lib     | .\libs\freetype2\build\Debug | freetyped.lib
+include | .\msvclibs\freetype2\include |  .
+lib     | .\msvclibs\freetype2\build\Release | freetype.lib
+lib     | .\msvclibs\freetype2\build\Debug | freetyped.lib

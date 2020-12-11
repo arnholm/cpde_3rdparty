@@ -1,8 +1,8 @@
 #!/bin/bash
 #  This procedure builds static carve library for linux
 #
-mkdir ../libs
-pushd ../libs
+mkdir ../gcclibs
+pushd ../gcclibs
 git clone https://github.com/arnholm/carve carve
 pushd carve
 ./build_linux.sh

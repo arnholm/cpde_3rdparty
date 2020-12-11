@@ -2,8 +2,8 @@
 REM  This procedure builds static boost libraries for Windows/MSVC
 REM  Procedure must be run from "Visual Studio Command Prompt"
 REM
-mkdir ..\libs
-pushd ..\libs
+mkdir ..\msvclibs
+pushd ..\msvclibs
 git clone --recursive https://github.com/boostorg/boost.git  --branch boost-1.74.0  --single-branch
 pushd boost
 REM

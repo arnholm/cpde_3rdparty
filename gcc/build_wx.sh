@@ -4,8 +4,8 @@
 #  NOTE: The user is prompted for password (twice) to allow install
 #
 SCRIPTPATH=$(dirname $(realpath -s $0))
-mkdir ../libs
-pushd ../libs
+mkdir ../gcclibs
+pushd ../gcclibs
 git clone https://github.com/wxWidgets/wxWidgets wx
 pushd wx
 git checkout tags/v3.0.4

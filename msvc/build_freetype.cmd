@@ -2,8 +2,8 @@
 REM  This procedure builds static FreeType library for Windows/MSVC
 REM  Procedure must be run from "Visual Studio Command Prompt"
 REM
-mkdir ..\libs
-pushd ..\libs
+mkdir ..\msvclibs
+pushd ..\msvclibs
 git clone https://github.com/freetype/freetype2 
 pushd freetype2
 git checkout tags/VER-2-10-2

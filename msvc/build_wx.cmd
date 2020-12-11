@@ -2,8 +2,8 @@
 REM  This procedure builds static wxWidgets libraries on Windows/MSVC
 REM  Procedure must be run from "Visual Studio Command Prompt"
 REM
-mkdir ..\libs
-pushd ..\libs
+mkdir ..\msvclibs
+pushd ..\msvclibs
 git clone https://github.com/wxWidgets/wxWidgets wx
 pushd wx
 git checkout tags/v3.0.4

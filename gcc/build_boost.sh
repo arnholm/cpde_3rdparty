@@ -11,8 +11,8 @@ if [ "$BOOST_USE_APT" = true ] ; then
 	sudo ldconfig
 else
 # build static boost libraries from source
-   mkdir ../libs
-   pushd ../libs
+   mkdir ../gcclibs
+   pushd ../gcclibs
    sudo apt install python3.8-dev
    git clone --recursive https://github.com/boostorg/boost.git  --branch boost-1.74.0  --single-branch
    pushd boost

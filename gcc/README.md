@@ -15,7 +15,7 @@ Designate a build area on the computer, with at least 10GB free space (20GB reco
 
     $ git clone https://github.com/arnholm/cpde_3rdparty
     
-Open a terminal in the msvc folder and run each script. Each script adds its build files to the gcclibs folder:
+Open a terminal in the gcc folder and run each script. Each script adds its build files to the gcclibs folder:
 
     cpde_3rdparty/gcclibs/boost
                          /wx

@@ -5,7 +5,6 @@ REM
 mkdir ..\msvclibs
 pushd ..\msvclibs
 git clone https://github.com/dcnieho/freeGLUT
-git checkout tags/FG_3_2_1
 pushd freeGLUT
 pushd freeglut
 pushd freeglut

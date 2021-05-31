@@ -9,13 +9,13 @@
 # change =no to =yes or omit =no to include in build
 XTIFF="--with-libtiff=no"
 XJPEG="--with-libjpeg=yes"
-ODBC="--with-odbc=no"
+SHARED="--enable-shared=yes"
 
 # put here things to explicitely enable
-ENABLE="--with-gtk --with-opengl --enable-unicode --enable-dnd --enable-dataobj --enable-graphics-ctx"
+ENABLE="--with-gtk=2 --with-opengl --enable-unicode --enable-dnd --enable-dataobj --enable-graphics-ctx"
 
 # put here things to explicitely disable
-DISABLE="--enable-shared=no --enable-iff=no --enable-tga=no --enable-pcx=no --enable-mediactrl=no --enable-dialupman=no --with-libmspack=no"
+DISABLE="--enable-iff=no --enable-tga=no --enable-pcx=no --enable-mediactrl=no --enable-dialupman=no --with-libmspack=no"
 
 # argument can be D for debug version
 if [ "$1" = "D" ] ; 
@@ -27,7 +27,7 @@ fi
 
 
 # here starts the configure
-../configure  ${ENABLE} ${DISABLE} ${XJPEG} ${XTIFF} ${ODBC} ${DEB}
+../configure  ${ENABLE} ${DISABLE} ${SHARED}  ${XJPEG} ${XTIFF} ${DEB}
 if [ $? != 0 ]; then exit -1 ; fi
 
 make

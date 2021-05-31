@@ -11,7 +11,8 @@ pushd ../gcclibs
 #
 sudo apt install cmake
 sudo apt install build-essential
-sudo apt install libgtk2.0-dev
+sudo apt install libgtk2.0-dev libhunspell-dev libgamin-dev
+sudo apt install libwxgtk3.0-gtk3-dev
 sudo apt install mesa-common-dev
 sudo apt install freeglut3-dev
 sudo apt install upx-ucl
@@ -19,6 +20,7 @@ sudo apt install upx-ucl
 git clone https://github.com/wxWidgets/wxWidgets wx
 pushd wx
 git checkout tags/v3.0.4
+#git checkout tags/v3.1.5
 #
 # build Release
 mkdir buildgtk

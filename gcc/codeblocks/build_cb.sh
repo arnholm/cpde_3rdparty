@@ -17,7 +17,7 @@ WX_CONFIG_FULLPATH="$WX_CONFIG_DIR/$WX_CONFIG"
 #build and install paths
 CB_DIR=/ssd1/codeblocks
 CB_BUILD_PATH="$CB_DIR/build/$WX_CONFIG"
-CB_INSTALL_PATH="$CB_DIR/$WX_CONFIG"
+CB_INSTALL_PATH="$CB_DIR/install/$WX_CONFIG"
 
 #create build area
 mkdir -p "$CB_BUILD_PATH"
@@ -32,6 +32,6 @@ cd codeblocks_sf/
             --with-wx-config="$WX_CONFIG_FULLPATH" \
             --prefix="$CB_INSTALL_PATH"
 make
-sudo make install
+make install
 ls -l "$CB_INSTALL_PATH/bin"
 popd

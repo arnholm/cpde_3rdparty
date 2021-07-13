@@ -17,7 +17,8 @@ sudo apt install mesa-common-dev
 sudo apt install freeglut3-dev
 sudo apt install upx-ucl
 #
-git clone https://github.com/wxWidgets/wxWidgets wx
+# clone wxWidgets and all submodules
+git clone --recursive https://github.com/wxWidgets/wxWidgets wx
 pushd wx
 git checkout tags/v3.0.4
 #git checkout tags/v3.1.5

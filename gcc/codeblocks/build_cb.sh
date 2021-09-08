@@ -3,8 +3,14 @@
 #install build essentials for codeblocks with gtk2 and gtk3
 sudo apt install cmake
 sudo apt install build-essential
-sudo apt install libgtk2.0-dev libhunspell-dev libgamin-dev
-sudo apt install libwxgtk3.0-gtk3-dev
+sudo apt install libhunspell-dev libgamin-dev
+
+#install build packages for codeblocks with gtk2
+sudo apt install libgtk2.0-dev
+
+#install build packages for codeblocks with gtk3
+sudo apt install libgtk-3-devmake
+sudo apt install libwxgtk3.0-gtk3-0v5 libwxgtk3.0-gtk3-dev
 
 #path to wxWidgets configuration scripts
 WX_CONFIG_DIR=/usr/local/lib/wx/config

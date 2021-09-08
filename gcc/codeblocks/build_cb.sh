@@ -12,7 +12,7 @@ sudo apt install libgtk2.0-dev
 sudo apt install libgtk-3-devmake
 sudo apt install libwxgtk3.0-gtk3-0v5 libwxgtk3.0-gtk3-dev
 
-#path to wxWidgets configuration scripts
+#path to wxWidgets configuration scripts when wxWidgets build locally
 WX_CONFIG_DIR=/usr/local/lib/wx/config
 
 #actual wxWidgets configuration to use

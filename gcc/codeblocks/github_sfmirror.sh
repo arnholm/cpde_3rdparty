@@ -19,6 +19,7 @@ cd "$CB_MIRROR_DIR"
 # 
 # ---- regular update  -----
 cd ./codeblocks-code
+# 'git svn rebase' is equivalent to 'git pull' for ordinary git repository
 git svn rebase
 git push github_sfmirror
 #

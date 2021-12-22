@@ -92,3 +92,14 @@ Path | Value | Note
 include | .\msvclibs\freetype2\include |  .
 lib     | .\msvclibs\freetype2\build\Release | freetype.lib
 lib     | .\msvclibs\freetype2\build\Debug | freetyped.lib
+
+
+### pybind11
+
+    $ ./build_pybind11.cmd
+
+This script clones from github. No building is done as it is used as header only.
+
+Path | Value 
+ --- | ---   
+include | .\msvclibs\pybind11\include 

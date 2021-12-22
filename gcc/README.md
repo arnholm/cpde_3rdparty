@@ -86,3 +86,14 @@ Path | Value | Note
  --- | ---  | ---
 include | ./gcclibs/freetype2/include |  .
 lib     | ./gcclibs/freetype2/build | libfreetype.a
+
+
+### pybind11
+
+    $ ./build_pybind11.sh
+
+This script clones from github. No building is done as it is used as header only.
+
+Path | Value 
+ --- | ---   
+include | ./gcclibs/pybind11/include 

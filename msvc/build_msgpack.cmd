@@ -1,7 +1,5 @@
 @echo off
-REM  This procedure builds static carve library for Windows/MSVC
-REM  Procedure must be run from "Visual Studio Command Prompt"
-REM
+REM  This procedure builds static msgpack for Windows/MSVC
 mkdir ..\msvclibs
 pushd ..\msvclibs
 git clone https://github.com/msgpack/msgpack-c.git 

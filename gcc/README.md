@@ -63,6 +63,19 @@ Path | Value | Note
 include | ./gcclibs/carve/include |  .
 include | ./gcclibs/carve/build/include | .
 lib     | ./gcclibs/carve/build/lib | libcarve.a
+
+
+### Crow
+
+    $ ./build_crow.sh
+	 
+This script clones from github and compiles Crow
+Crow is a header only library, so only include path is required
+
+
+Path | Value | Note
+ --- | ---  | ---
+include | ./gcclibs/crow/include |  .
     
 ### freeglut
 
@@ -97,3 +110,4 @@ This script clones from github. No building is done as it is used as header only
 Path | Value 
  --- | ---   
 include | ./gcclibs/pybind11/include 
+

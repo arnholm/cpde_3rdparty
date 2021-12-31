@@ -77,12 +77,13 @@ Path | Value | Note
  --- | ---  | ---
 include | ./gcclibs/crow/include |  .
 
-### cpp-dotenv
+### dotenv (cpp-dotenv)
 
     $ ./build_dotenv.sh
 
-This script clones from github and compiles cpp-dotenv into several static libraries.
-The script merges all the static libraries into one (keeping originals): libdotenv_all.a
+This script clones from github and compiles dotenv into several static libraries.
+
+To simplify linking this library, all libraries are also merged into a single library 'libdotenv_all.a'
 
 
 Path | Value | Note

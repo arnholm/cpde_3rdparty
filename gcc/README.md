@@ -76,6 +76,19 @@ Crow is a header only library, so only include path is required
 Path | Value | Note
  --- | ---  | ---
 include | ./gcclibs/crow/include |  .
+
+### cpp-dotenv
+
+    $ ./build_dotenv.sh
+
+This script clones from github and compiles cpp-dotenv into several static libraries.
+The script merges all the static libraries into one (keeping originals): libdotenv_all.a
+
+
+Path | Value | Note
+ --- | ---  | ---
+include | ./gcclibs/dotenv/include |  .
+lib     | ./gcclibs/dotenv/build | libdotenv_all.a
     
 ### freeglut
 

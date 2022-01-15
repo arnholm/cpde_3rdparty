@@ -103,3 +103,25 @@ This script clones from github. No building is done as it is used as header only
 Path | Value 
  --- | ---   
 include | .\msvclibs\pybind11\include 
+
+
+### dotenv
+
+    $ ./build_dotenv.cmd
+
+This script clones from github. No building is done as it is used as header only.
+
+Path | Value 
+ --- | ---   
+include | .\msvclibs\dotenv\include 
+
+
+### crow
+
+    $ ./build_crow.cmd
+
+This script clones from github. No building is done as it is used as header only.
+
+Path | Value 
+ --- | ---   
+include | .\msvclibs\crow\include 

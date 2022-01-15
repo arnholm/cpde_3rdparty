@@ -9,4 +9,4 @@ REM dotenv-cpp is a header-only library so nothing to build
 REM
 REM return to the directory of this batch file
 REM cd %~dp0
-echo ==== crow build completed =====
+echo ==== dotenv build completed =====

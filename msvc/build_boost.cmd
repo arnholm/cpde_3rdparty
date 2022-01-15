@@ -19,5 +19,5 @@ REM
 .\b2 -j8 toolset=msvc  --user-config=user-config.jam address-model=64 architecture=x86 link=static threading=multi runtime-link=shared --build-type=minimal 
 REM return to the directory of this batch file
 cd %~dp0
-echo " --- boost build ended ---"
+echo ==== boost build completed =====
 

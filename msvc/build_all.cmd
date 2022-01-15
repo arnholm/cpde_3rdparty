@@ -4,3 +4,6 @@ call build_msgpack.cmd
 call build_carve.cmd
 call build_freetype.cmd
 call build_freeglut.cmd
+call build_pybind11.cmd
+call build_dotenv.cmd
+call build_crow.cmd

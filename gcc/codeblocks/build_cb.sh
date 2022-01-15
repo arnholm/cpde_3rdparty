@@ -1,5 +1,6 @@
 #!/bin/bash
 # build script for Code::Blocks under Ubuntu
+# Script source : https://github.com/arnholm/cpde_3rdparty/blob/master/gcc/codeblocks/build_cb.sh
 
 #install build essentials for codeblocks with gtk2 and gtk3
 sudo apt install -y git

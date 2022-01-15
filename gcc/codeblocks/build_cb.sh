@@ -7,6 +7,7 @@ sudo apt install -y cmake
 sudo apt install -y build-essential
 sudo apt install -y libhunspell-dev libgamin-dev
 sudo apt install -y libboost-system-dev
+sudo apt install -y libtool
 
 #install build packages for codeblocks with gtk2
 sudo apt install -y libgtk2.0-dev

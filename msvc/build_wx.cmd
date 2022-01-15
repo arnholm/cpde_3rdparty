@@ -14,7 +14,7 @@ REM Below is for MSVC2013, using cross compiler
 REM call "%VS120COMNTOOLS%..\..\VC\vcvarsall.bat" x86_amd64
 REM
 REM Below is for MSVC2019, using native compiler
-REM call "%VS160COMNTOOLS%..\..\VC\Auxiliary\Build\vcvarsall.bat" x64
+call "%VS160COMNTOOLS%..\..\VC\Auxiliary\Build\vcvarsall.bat" x64
 REM
 REM ------- make sure foreign makeflags don't interfere (QNX does this)
 set MAKEFLAGS=

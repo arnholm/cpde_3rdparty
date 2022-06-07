@@ -66,6 +66,16 @@ include | .\msvclibs\carve\include |  .
 lib     | .\msvclibs\carve\build\lib\Release | Release build
 lib     | .\msvclibs\carve\build\lib\Debug | Debug build
 
+### eigen
+
+    $ ./build_eigen.cmd
+
+This script clones from gitlab. No building is done as it is used as header only.
+
+Path | Value 
+ --- | ---   
+include | .\msvclibs\eigen 
+
 
 ### freeglut
 

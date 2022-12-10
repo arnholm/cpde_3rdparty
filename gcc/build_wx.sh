@@ -4,7 +4,7 @@
 #  NOTE: The user is prompted for password (twice) to allow install
 #
 SCRIPTPATH=$(dirname $(realpath -s $0))
-mkdir ../gcclibs
+mkdir -p ../gcclibs
 pushd ../gcclibs
 #
 # Install essential build tools and libraries
@@ -18,9 +18,9 @@ sudo apt install freeglut3-dev
 sudo apt install upx-ucl
 #
 # clone wxWidgets and all submodules
-git clone --recursive https://github.com/wxWidgets/wxWidgets wx
+git clone --recursive --depth 1 --branch v3.0.4  https://github.com/wxWidgets/wxWidgets wx
 pushd wx
-git checkout tags/v3.0.4
+# git checkout tags/v3.0.4
 #git checkout tags/v3.1.5
 #
 # build Release

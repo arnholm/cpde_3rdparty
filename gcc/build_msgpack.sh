@@ -1,7 +1,7 @@
 #!/bin/bash
 #  This procedure builds msgpack-c for linux
 #
-mkdir ../gcclibs
+mkdir -p ../gcclibs
 pushd ../gcclibs
 git clone https://github.com/msgpack/msgpack-c.git 
 pushd msgpack-c

@@ -2,7 +2,7 @@
 #  This procedure builds crow for linux
 #  see https://crowcpp.org/getting_started/setup/linux/
 #
-mkdir ../gcclibs
+mkdir -p ../gcclibs
 pushd ../gcclibs
 git clone https://github.com/CrowCpp/Crow.git crow
 pushd crow

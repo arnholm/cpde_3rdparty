@@ -1,7 +1,7 @@
 #!/bin/bash
 #  This procedure builds cpp-dotenv for linux
 #
-mkdir ../gcclibs
+mkdir -p ../gcclibs
 pushd ../gcclibs
 git clone https://github.com/arnholm/dotenv-cpp dotenv
 # git clone https://github.com/adeharo9/cpp-dotenv dotenv

@@ -1,7 +1,7 @@
 #!/bin/bash
 #  This procedure builds pybind11 for linux
 #
-mkdir ../gcclibs
+mkdir -p ../gcclibs
 pushd ../gcclibs
 git clone https://github.com/pybind/pybind11
 pushd pybind11

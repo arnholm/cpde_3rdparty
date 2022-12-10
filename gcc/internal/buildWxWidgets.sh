@@ -12,7 +12,7 @@ XJPEG="--with-libjpeg=yes"
 SHARED="--enable-shared=yes"
 
 # put here things to explicitely enable
-ENABLE="--with-gtk=2 --with-opengl --enable-unicode --enable-dnd --enable-dataobj --enable-graphics-ctx"
+ENABLE="--with-gtk=2 --with-opengl --enable-dnd --enable-dataobj --enable-graphics-ctx"
 
 # put here things to explicitely disable
 DISABLE="--enable-iff=no --enable-tga=no --enable-pcx=no --enable-mediactrl=no --enable-dialupman=no --with-libmspack=no"

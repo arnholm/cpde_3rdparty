@@ -9,10 +9,12 @@
 # change =no to =yes or omit =no to include in build
 XTIFF="--with-libtiff=no"
 XJPEG="--with-libjpeg=yes"
-SHARED="--enable-shared=yes"
+# CPDE         uses static  linking:   -enable-shared=no 
+# Code::Blocks uses dynamic linking:   -enable-shared=yes 
+SHARED="--enable-shared=no"
 
 # put here things to explicitely enable
-ENABLE="--with-gtk=2 --with-opengl --enable-dnd --enable-dataobj --enable-graphics-ctx"
+ENABLE="--with-gtk=2 --with-opengl --enable-unicode --enable-dnd --enable-dataobj --enable-graphics-ctx"
 
 # put here things to explicitely disable
 DISABLE="--enable-iff=no --enable-tga=no --enable-pcx=no --enable-mediactrl=no --enable-dialupman=no --with-libmspack=no"

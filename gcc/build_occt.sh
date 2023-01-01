@@ -16,6 +16,10 @@ cmake -B ${BUILDDIR} \
 pushd ${BUILDDIR}
 make
 make install
+# Create monolithic library on lib folder
+pushd ${INSTALLDIR}
+pushd lib
+ar -rcT libocct_monolithic.a lib*.a
 #
 #return to the directory of this batch file
 SCRIPTPATH=$(dirname $(realpath -s $0))

@@ -104,6 +104,18 @@ lib     | .\msvclibs\freetype2\build\Release | freetype.lib
 lib     | .\msvclibs\freetype2\build\Debug | freetyped.lib
 
 
+### occt (opencascade)
+
+    build_occt.cmd
+
+This script clones from github and compiles occt into a static library: occt_monolithic.lib
+Individual static libraries are also available under win64\..
+
+Path | Value | Note
+ --- | ---  | ---
+include | .\msvclibs\occt\install_static/inc | .
+lib | .\msvclibs\occt\install_static\lib | libocct_monolithic.a
+
 ### pybind11
 
     $ ./build_pybind11.cmd

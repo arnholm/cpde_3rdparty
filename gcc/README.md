@@ -115,6 +115,19 @@ include | ./gcclibs/freetype2/include |  .
 lib     | ./gcclibs/freetype2/build | libfreetype.a
 
 
+### occt (opencascade)
+
+    $ ./build_occt.sh
+
+This script clones from github and compiles occt into a static library: libocct_monolithic.a 
+Individual static libraries are also available in the same folder
+
+Path | Value | Note
+ --- | ---  | ---
+include | ./gcclibs/occt/install_static/include/opencascade | .
+lib | ./gcclibs/occt/install_static/lib | libocct_monolithic.a
+
+
 ### pybind11
 
     $ ./build_pybind11.sh

@@ -11,8 +11,9 @@ mkdir ..\msvclibs
 pushd ..\msvclibs
 git clone --recursive https://github.com/boostorg/boost.git  --branch boost-1.82.0  --single-branch
 pushd boost
-REM
-call bootstrap.bat vc142
+REM  MSVC2019: call bootstrap.bat vc142
+REM  MSVC2022: call bootstrap.bat vc143
+call bootstrap.bat vc143
 REM
 REM Set address-model=32 for x86 32-bit builds
 REM Set address-model=64 for x86_amd64 cross compiler or native amd64 build
